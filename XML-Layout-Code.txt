@@ -43,3 +43,27 @@ we two view groups
 arrange children in a vertical column or horizontal row.
 2- the RelativeLayout
 it could arrang children relative to the parent or relative to other children
+
+Lesson 2-3 LinearLayout
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" -- XML namespace which contains 
+	all attributes used in the code
+	in this case it belongs to android.
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Guest List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		 android:gravity="center" --> to center the text
+        android:textSize="24sp"  />
+
+    <TextView
+        android:text="Kunal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"  />
+
+</LinearLayout>
