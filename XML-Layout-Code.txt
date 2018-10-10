@@ -35,3 +35,11 @@ I have added two images in the view and I have changerd the background of the vi
      	android:layout_height="300dp" 
     	android:scaleType="centerCrop"/>
 </View>
+
+Lesson 2-2 Types of ViewGroups
+
+we two view groups
+1- the LinearLayout
+arrange children in a vertical column or horizontal row.
+2- the RelativeLayout
+it could arrang children relative to the parent or relative to other children
