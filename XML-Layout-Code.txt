@@ -67,3 +67,43 @@ Lesson 2-3 LinearLayout
         android:textSize="24sp"  />
 
 </LinearLayout>
+
+lesson 2-5 evenly spacing out children views
+this code will evenly distribute the three text view vericaly
+the three text have weight ="1" to occuby the remaing space equally. 
+if you give a bigger weight to any other children it will have bigger space
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" -->stretch the view with the device width
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Tom"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" -->
+        android:layout_weight="1" --> 
+        android:background="#92d3ed"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Tim"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+  
+        android:background="#2196c4"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Todd"
+       android:textStyle="bold"
+       android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#92d3ed"
+        android:textSize="24sp" />
+
+</LinearLayout> 
