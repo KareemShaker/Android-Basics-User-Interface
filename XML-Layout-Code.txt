@@ -7,3 +7,31 @@ Lesson 1-13 TextView text Color
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:textSize="45sp" />
+	
+Lesson 1-14 Image view
+<imageView
+	android:src="@drawable/cake" --> this is the src of the image in the file "cake" ,
+	@drawable is a reference to resource type ,it is graphic will shown on screen.
+	images will be added manualy to the drawable folder.
+	
+	android:scaleType="center" --> it scales up or down the image. centre means centre the image
+	centreCrope this scales down the image to fit the hight and the width of the view
+
+I have added two images in the view and I have changerd the background of the view	
+<View
+	android:layout_width="360dp" --> used width and height to let the pics appear
+    android:layout_height="700dp"
+    android:background="#F0E68C">
+	<ImageView
+    	android:src="@drawable/ocean"
+    	android:layout_width="wrap_content"
+     	android:layout_height="340dp" 
+    	android:scaleType="centerCrop"
+        />
+    
+    <ImageView
+    	android:src="@drawable/mountains"
+    	android:layout_width="wrap_content"
+     	android:layout_height="300dp" 
+    	android:scaleType="centerCrop"/>
+</View>
