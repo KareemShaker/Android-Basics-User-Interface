@@ -107,3 +107,38 @@ if you give a bigger weight to any other children it will have bigger space
         android:textSize="24sp" />
 
 </LinearLayout> 
+
+Lesson 2-6 Layout Weight
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/ocean"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"--> give it weight 1 to stretch to the remaining space
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:text="You're invited!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_weight="0" --> give it weight 0 so it takes only it size space
+        android:textSize="54sp"
+        android:background="#009688" />
+
+    <TextView
+        android:text="Bonfire at the beach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+         android:layout_weight="0" give it weight 0 so it takes only it size in space
+        android:textSize="34sp"
+        android:background="#009688" />
+
+</LinearLayout>
+
